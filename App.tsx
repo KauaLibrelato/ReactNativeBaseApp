@@ -16,12 +16,10 @@ import { LogBox, StatusBar } from "react-native";
 import FlashMessage from "react-native-flash-message";
 import { Routes } from "./src/routes";
 import { theme } from "./src/styles/theme";
-import { AuthProvider } from "./src/hooks/AuthProvider";
 
 LogBox.ignoreLogs([
   "expo-app-loading is deprecated in favor of expo-splash-screen",
   "In React 18, SSRProvider is not necessary and is a noop. You can remove it from your app.",
-
   "ViewPropTypes will be removed from React Native, along with all other PropTypes. We recommend that you migrate away from PropTypes and switch to a type system like TypeScript. If you need to continue using ViewPropTypes, migrate to the 'deprecated-react-native-prop-types' package.",
 ]);
 export default function App() {
@@ -46,9 +44,7 @@ export default function App() {
       <StatusBar barStyle="dark-content" />
       <ThemeProvider theme={theme}>
         <NativeBaseProvider>
-          <AuthProvider>
-            <Routes />
-          </AuthProvider>
+          <Routes />
         </NativeBaseProvider>
       </ThemeProvider>
     </GestureHandlerRootView>
