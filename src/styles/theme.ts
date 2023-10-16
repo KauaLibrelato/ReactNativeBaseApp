@@ -64,7 +64,7 @@ export const theme = {
     info200: "#9FBDF9",
     info300: "#6F9CF6",
     info400: "#578CF4",
-    info500: "#FFEFCC",
+    info500: "#578CF4",
     info600: "#5089FB",
     info700: "#276BF1",
     info800: "#0F5AF0",
