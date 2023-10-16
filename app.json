@@ -49,10 +49,7 @@
         "foregroundImage": "./assets/adaptive-icon.png"
       },
       "package": "com.baseapp.app",
-      "versionCode": 0,
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
-      ]
+      "versionCode": 1
     },
     "androidStatusBar": {
       "barStyle": "dark-content",
